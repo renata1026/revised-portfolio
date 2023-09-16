@@ -5,18 +5,17 @@ import Yoga from '../assets/yoga.jpeg';
 import Climbing from '../assets/climbing.jpeg';
 
 function Resume() {
+  const backgroundImageStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/mountain.jpg)`,
+    backgroundPosition: 'center center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    width: '100%',
+    height: '100vh',
+  };
   return (
-    <section
-      style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/mountain.jpg)`,
-        backgroundPosition: 'center center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-      }}
-      className="timeline"
-      id="timeline"
-    >
+    <section className="timeline" id="timeline" style={backgroundImageStyle}>
       <div className="timeline-block timeline-block-left">
         <div className="marker"></div>
         <div className="timeline-content">
@@ -42,7 +41,6 @@ function Resume() {
           </p>
         </div>
       </div>
-
       <div className="timeline-block timeline-block-left">
         <div className="marker"></div>
         <div className="timeline-content">
