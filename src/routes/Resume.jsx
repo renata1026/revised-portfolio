@@ -8,9 +8,11 @@ function Resume() {
   return (
     <section
       style={{
-        background:
-          'url("../../public/mountain.jpg") no-repeat center center fixed',
+        backgroundImage: `url(${process.env.PUBLIC_URL}/mountain.jpg)`,
+        backgroundPosition: 'center center',
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
       }}
       className="timeline"
       id="timeline"
