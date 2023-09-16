@@ -1,0 +1,79 @@
+@use "variables" as *;
+/*Typography */
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    text-align: center;
+    font-weight:$fw-bold;
+}
+
+h1 {
+    font-size: $fs-h1;
+}
+
+h2 {
+    font-size: $fs-h2;
+}
+
+h3 {
+    font-size: $fs-h3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+h4{
+    letter-spacing:2px;
+}
+h4.project__title{
+    margin:0;
+}
+p {
+font-weight:$fw-reg;
+font-size:$fs-body;
+}
+
+#title-dark,
+.title-project {
+    margin-bottom: 0.5em;
+    border-bottom: 0;
+    width: 100%;
+    color: $clr-dark;
+}
+
+#title-dark,
+.title-project {
+    color: $clr-dark;
+    position: relative
+}
+
+#light-accent {
+    margin-bottom: 0.5em;
+    border-bottom: 0;
+    width: 100%;
+    color: $clr-light;
+}
+
+#light-accent {
+    color: $clr-light;
+    position: relative
+}
+
+.highlight {
+    font-weight: $fw-reg;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+    background-position: 0 70%;
+}
+
+.title-strong {
+    display: block;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: $fs-h3;
+    text-align: center;
+    color: $clr-accent;
+}

@@ -1,0 +1,109 @@
+@use "variables" as *;
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    z-index: 10;
+    min-height: 150px;
+}
+
+a .hamburger {
+    cursor: pointer;
+}
+
+/*Navigation Menu */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #F3F6FA;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+.navigation ul li {
+    color: $clr-dark;
+    font-size: $fs-nav;
+    text-align: center;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: $p-1;
+    line-height: 1;
+    border-bottom: 1pt solid $clr-dark;
+    margin-top: 3em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: $clr-dark;
+}
+
+header .navigation a:hover,
+header .navigation a:focus {
+    color: $clr-btn-accent;
+}
+
+/* Navigation Dark mode */
+.dark .navigation {
+    background: #000;
+}
+
+.dark .navigation a {
+    color: #fff;
+}
+.dark .navigation ul li {
+    border-color: white;
+}
+
+.hamburger {
+    font-size: 3em;
+    cursor: pointer;
+    color: $clr-dark;
+    display: block;
+    position: fixed;
+    top:2%;
+    left: 80%;
+    z-index: 20;
+
+}
+
+.hamburger .bx {
+    font-size: 4rem;
+}
+
+/* Hamburger Dark */
+.dark .hamburger .bx {
+    background: black;
+    color: white;
+}
+
+.bx-x {
+    font-size: 3em;
+    position: relative;
+    z-index: 20;
+    color: $clr-dark;
+}
+
+.navigation.active {
+    left: 0;
+  }
+
+.close {
+    color: $clr-dark;
+}

@@ -1,0 +1,116 @@
+@use 'variables' as *;
+
+/* Define breakpoints for responsiveness */
+$sm: 576px; /* Small screens */
+$md: 768px; /* Medium screens */
+$lg: 992px; /* Large screens */
+$xl: 1200px; /* Extra-large screens */
+
+/* Create a grid container */
+.nav-wrap-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 105px;
+
+  @media screen and (max-width: $xl) {
+    margin-left: 0;
+  }
+}
+
+.banner .nav-wrap .nav-grid .single-item a {
+  height: calc(100% + 62px);
+  width: calc(100% + 62px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transform: rotate(45deg) translate(-43px, 0);
+  -ms-transform: rotate(45deg) translate(-43px, 0);
+  transform: rotate(45deg) translate(-43px, 0);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+/* Define grid items */
+.single-item {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+  }
+
+  .icon {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .txt {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: $lg) {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    .icon {
+      font-size: 20px;
+    }
+
+    .txt {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    .icon {
+      font-size: 16px;
+    }
+
+    .txt {
+      font-size: 8px;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    .icon {
+      font-size: 24px;
+    }
+
+    .txt {
+      font-size: 12px;
+    }
+  }
+}
