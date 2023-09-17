@@ -17,7 +17,6 @@ function Resume() {
         backgroundRepeat: 'no-repeat',
         backgroundAttachment: 'fixed',
         width: '100%',
-        height: '100vh',
       }}
     >
       <div className="timeline-block timeline-block-left">
