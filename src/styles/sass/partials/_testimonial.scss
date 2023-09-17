@@ -1,7 +1,7 @@
 @use 'variables' as *;
 /* styles.css */
 :root {
-  --Quote: url('../../public/quote.svg');
+  --Quote: url('../../../../public/quote.svg');
 }
 
 /* Giving it relative position so we can place the slide indicators relative to it's height */

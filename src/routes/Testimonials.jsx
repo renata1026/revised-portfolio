@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { testimonialsData } from '../context';
-import Quote from '../../public/quote.svg';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
