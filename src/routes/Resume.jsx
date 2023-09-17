@@ -3,19 +3,23 @@ import Question from '../assets/question-mark.png';
 import Certificate from '../assets/certificate.png';
 import Yoga from '../assets/yoga.jpeg';
 import Climbing from '../assets/climbing.jpeg';
+import Mountain from '../../public/mountain.jpg';
 
 function Resume() {
-  const backgroundImageStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/mountain.jpg)`,
-    backgroundPosition: 'center center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment: 'fixed',
-    width: '100%',
-    height: '100vh',
-  };
   return (
-    <section className="timeline" id="timeline" style={backgroundImageStyle}>
+    <section
+      className="timeline"
+      id="timeline"
+      style={{
+        backgroundImage: `url(${Mountain})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        width: '100%',
+        height: '100vh',
+      }}
+    >
       <div className="timeline-block timeline-block-left">
         <div className="marker"></div>
         <div className="timeline-content">
