@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { testimonialsData } from '../context';
+import Quote from '../../public/quote.svg';
 
 const Testimonials = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,6 +31,7 @@ const Testimonials = () => {
       <div className="testimonial-container">
         {testimonialsData.map((testimonial, index) => (
           <div
+            style={{ backgroundImage: 'var(--Quote) no-repeat center center' }}
             key={index}
             className={`slide ${index === currentSlide ? 'slide-active' : ''}`}
           >
