@@ -1,12 +1,9 @@
 @use 'variables' as *;
-/* styles.css */
-:root {
-  --Quote: url('../../../../public/quote.svg');
-}
 
-/* Giving it relative position so we can place the slide indicators relative to it's height */
-#testimonials {
+/* Testimonials.scss */
+.testimonial-area {
   position: relative;
+  background-color: #fff1fa;
 }
 
 .testimonial-container {
@@ -16,6 +13,19 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
   padding: 20px 0px;
+}
+
+.testimonial-container .quote-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url('../assets/quote.png');
+  background-size: cover;
+  opacity: 0.3;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
 .testimonial-container .slide {
@@ -30,7 +40,6 @@
   width: 100%;
 }
 
-/* Active Testimonial Slide */
 .testimonial-container .slide.slide-active {
   display: flex;
   flex-direction: column;
@@ -78,7 +87,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  // background-color: #ccc;
 }
 
 .testimonial-container .slide .img-box img {
@@ -90,6 +98,7 @@
   min-height: 100%;
   object-fit: cover;
 }
+
 .testimonial-container .slide:before {
   content: '';
   font-size: 7rem;
@@ -98,7 +107,6 @@
   right: 0;
   width: 80px;
   height: 80px;
-  background: url(../../../../public/quote.svg);
   background-size: cover;
   opacity: 0.3;
   pointer-events: none;
@@ -120,7 +128,7 @@
   height: 80px;
   width: 80px;
   height: 80px;
-  background: url(../../../../public/quote.svg);
+  background: url('../assets/quote.png'); // Adjust the path as needed
   background-size: cover;
   opacity: 0.3;
   pointer-events: none;

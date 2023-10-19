@@ -24,13 +24,10 @@ const Testimonials = () => {
             Testimonials
           </h2>
         </div>
-        {/* End of sec-title */}
       </div>
-      {/* End of testimonial */}
       <div className="testimonial-container">
         {testimonialsData.map((testimonial, index) => (
           <div
-            style={{ backgroundImage: 'var(--Quote) no-repeat center center' }}
             key={index}
             className={`slide ${index === currentSlide ? 'slide-active' : ''}`}
           >
@@ -49,8 +46,6 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      {/* End Testimonial Container */}
-      {/* Indicators */}
       <button className="prev" id="prev" onClick={prevSlide}>
         <i className="bx bxs-chevron-left"></i>
       </button>
@@ -58,7 +53,6 @@ const Testimonials = () => {
       <button className="next" id="next" onClick={nextSlide}>
         <i className="bx bxs-chevron-right"></i>
       </button>
-      {/* End Indicators */}
     </section>
   );
 };

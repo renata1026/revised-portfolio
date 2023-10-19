@@ -1,11 +1,20 @@
 import React from 'react';
-import Animal from '../assets/animal-match.png';
+import Trip from '../assets/trip-planner.png';
 import Podcast from '../assets/find-your-podcast.png';
 import Makeup from '../assets/makeup-store.png';
 import JobBoard from '../assets/job-board.png';
 
 // Define an array of project data
 const projectsData = [
+  {
+    title: 'Astro Planner App',
+    image: Trip,
+    techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQL/NoSQL'],
+    description:
+      'A robust travel planner full stack application with React, JWT authentication, Express server, Cockroach, and RESTful APIs, delivering seamless CRUD functionality.',
+    liveLink: 'https://astro-planner.netlify.app/',
+    codeLink: 'https://github.com/renata1026/astro-planner-client',
+  },
   {
     title: 'Podcast App',
     image: Podcast,
@@ -24,15 +33,7 @@ const projectsData = [
     liveLink: 'https://makeup4life.netlify.app/',
     codeLink: 'https://github.com/renata1026/makeup-ecommerce-store',
   },
-  {
-    title: 'Animal Match App',
-    image: Animal,
-    techStack: ['HTML', 'SASS', 'ES 6'],
-    description:
-      "This lighthearted app matches an animal photo with the user's personality using the Pexels API. Developed and designed collaboratively.",
-    liveLink: 'https://animal-match.netlify.app/',
-    codeLink: 'https://github.com/renata-fiona/animal-match-app',
-  },
+
   {
     title: 'Jobi Job Board',
     image: JobBoard,
