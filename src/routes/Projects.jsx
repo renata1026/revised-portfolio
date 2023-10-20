@@ -11,7 +11,7 @@ const projectsData = [
     image: Trip,
     techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQL/NoSQL'],
     description:
-      'A robust travel planner full stack application with React, JWT authentication, Express server, Cockroach, and RESTful APIs, delivering seamless CRUD functionality.',
+      'A robust travel planner full stack application with React, JWT authentication, Express server, CockroachDB, and RESTful APIs, delivering seamless CRUD functionality.',
     liveLink: 'https://astro-planner.netlify.app/',
     codeLink: 'https://github.com/renata1026/astro-planner-client',
   },

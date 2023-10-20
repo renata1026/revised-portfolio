@@ -12,7 +12,7 @@
 }
 
 .project__img {
-  //   background: #f3f6fa;
+  background: #f3f6fa;
   border-radius: 0.5rem;
   display: flex;
   flex-grow: 1;
@@ -21,7 +21,8 @@
 .project__img img {
   width: 100%;
   height: auto;
-  // min-height: 100%;
+  min-height: 300px;
+  min-width: 476px;
   object-fit: cover;
 }
 
