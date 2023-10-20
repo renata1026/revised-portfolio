@@ -22,7 +22,7 @@ const AboutMe = () => {
         <div className="right-col">
           <p className="greeting">
             Hey there! I'm Renata, a <strong>full stack developer</strong> with
-            a passion for all things
+            a passion for all things development.
             <em>
               {' '}
               My toolkit includes JavaScript, React, CSS, SASS, HTML, Prisma,
