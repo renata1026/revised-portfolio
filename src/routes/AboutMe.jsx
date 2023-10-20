@@ -21,20 +21,19 @@ const AboutMe = () => {
         {/* End left-col */}
         <div className="right-col">
           <p className="greeting">
-            Hey there! I'm Renata, a <strong>web developer </strong>with a
+            Hey there! I'm Renata, a <strong>full stack developer</strong>with a
             passion for all things
-            <em> CSS, HTML, JavaScript, and React.</em>
-            <p>
-              Currenly, learning Prisma, Express Server, and CockRoach DB to
-              become a full stack developer.
-            </p>
+            <em>
+              {' '}
+              My tech tack includes: JavaScript, React, CSS, SASS, HTML, Prisma,
+              Express Server and CockRoach DB
+            </em>
           </p>
           {/* End Qualifications */}
           <p className="qualifications">
             <p>
-              I am a CPA with over 10 years of experience working in various
-              roles from financial analyst to accounting manager , however web
-              development stole my heart.
+              I have been developing sites for the past two years. Prior to
+              development I was a CPA with over 10 years of experience.
             </p>{' '}
             <p>
               I bring excellent communication, problem solving and analytical
