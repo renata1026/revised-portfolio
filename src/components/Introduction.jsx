@@ -9,7 +9,7 @@ function Introduction() {
       <div className="home-left-col">
         <h1 className="title-intro">Hi, I am Renata!</h1>
         <p>
-          Passionate front-end developer. Eager to create exceptional digital
+          Passionate full stack developer. Eager to create exceptional digital
           experiences. If you'd like to see what I'm working on now, check out
           my {''}
           <a
