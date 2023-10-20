@@ -21,27 +21,27 @@ const AboutMe = () => {
         {/* End left-col */}
         <div className="right-col">
           <p className="greeting">
-            Hey there! I'm Renata, a <strong>full stack developer</strong>with a
-            passion for all things
+            Hey there! I'm Renata, a <strong>full stack developer</strong> with
+            a passion for all things
             <em>
               {' '}
-              My tech tack includes: JavaScript, React, CSS, SASS, HTML, Prisma,
-              Express Server and CockRoach DB
+              My toolkit includes JavaScript, React, CSS, SASS, HTML, Prisma,
+              Express Server, and CockRoach DB.
             </em>
           </p>
           {/* End Qualifications */}
           <p className="qualifications">
             <p>
-              I have been developing sites for the past two years. Prior to
-              development I was a CPA with over 10 years of experience.
+              I've been building websites for two years, and before that, I was
+              a CPA with over a decade of experience.
             </p>{' '}
             <p>
-              I bring excellent communication, problem solving and analytical
+              I bring great communication, problem-solving, and analytical
               skills to the table.
             </p>
             <p>
-              When I'm not coding up a storm, I love to eat pasta and spend
-              quality time with my fam. Let's create something awesome together!
+              When I'm not coding, I enjoy pasta and quality time with my
+              family. Let's create something awesome together! 😊
             </p>
           </p>
           <div className="flex-btn">

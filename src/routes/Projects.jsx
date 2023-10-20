@@ -18,7 +18,7 @@ const projectsData = [
   {
     title: 'Podcast App',
     image: Podcast,
-    techStack: ['REACT', 'SASS', 'FIREBASE'],
+    techStack: ['React', 'SASS', 'Firebase'],
     description:
       'A fun app where the user selects the length of their podcast and genre of podcast using the listen notes API.',
     liveLink: 'https://podcast-planner-app.netlify.app/',
@@ -27,7 +27,7 @@ const projectsData = [
   {
     title: 'Makeup Store',
     image: Makeup,
-    techStack: ['CSS', 'React'],
+    techStack: ['CSS', 'REACT'],
     description:
       'An elegantly designed e-commerce website using React and the makeup API. Includes a scroll to top feature and a functional shopping cart.',
     liveLink: 'https://makeup4life.netlify.app/',
