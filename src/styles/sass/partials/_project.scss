@@ -40,6 +40,9 @@
   transition: 0.3s;
 }
 
+.project__description {
+  max-width: 300px;
+}
 .link-btn {
   display: flex;
   justify-content: center;
@@ -101,6 +104,7 @@ h4.project__title {
 .stack {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   color: $clr-dark;
   justify-content: center;
