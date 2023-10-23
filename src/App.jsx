@@ -5,6 +5,8 @@ import { useLocation, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Introduction from './components/Introduction';
 import Footer from './components/Footer';
+import Projects from './routes/Projects';
+import Testimonials from './routes/Testimonials';
 
 function isLowerScreen() {
   return window.matchMedia('(max-width:800px)').matches;
@@ -22,6 +24,8 @@ function App() {
       <Header />
       {isHome && <Introduction />}
       <Outlet />
+      <Projects />
+      <Testimonials />
       <Footer />
     </div>
   );
