@@ -1,10 +1,16 @@
 import React from 'react';
+import {
+  TbBrandCss3,
+  TbBrandReact,
+  TbBrandSass,
+  TbBrandPrisma,
+  TbBrandFirebase,
+} from 'react-icons/tb';
 import Trip from '../assets/trip-planner.png';
 import Podcast from '../assets/find-your-podcast.png';
 import Makeup from '../assets/makeup-store.png';
 import JobBoard from '../assets/job-board.png';
 
-// Define an array of project data
 const projectsData = [
   {
     title: 'Astro Planner App',
@@ -27,23 +33,33 @@ const projectsData = [
   {
     title: 'Makeup Store',
     image: Makeup,
-    techStack: ['CSS', 'REACT'],
+    techStack: ['CSS3', 'React'],
     description:
       'An elegantly designed e-commerce website using React and the makeup API. Includes a scroll to top feature and a functional shopping cart.',
     liveLink: 'https://makeup4life.netlify.app/',
     codeLink: 'https://github.com/renata1026/makeup-ecommerce-store',
   },
-
   {
     title: 'Jobi Job Board',
     image: JobBoard,
     techStack: ['React', 'SASS', 'Firebase'],
     description:
-      'Do you need to find a job? The Jobi JobBoard is a marketplace for creative jobseekers and employers. Coded to spec and developed collaboratively.(Work in progress)',
+      'Do you need to find a job? The Jobi JobBoard is a marketplace for creative jobseekers and employers. Coded to spec and developed collaboratively. (Work in progress)',
     liveLink: 'https://jobi-job-board.netlify.app/',
     codeLink: 'https://github.com/renata1026/newsletter',
   },
 ];
+
+// Define an object to map tech names to icons
+const techIcons = {
+  React: TbBrandReact,
+  SASS: TbBrandSass,
+  Prisma: TbBrandPrisma,
+  Express: 'Express', // String for tech without a corresponding icon
+  SQLNoSQL: 'SQL/NoSQL', // String for tech without a corresponding icon
+  Firebase: TbBrandFirebase,
+  CSS3: TbBrandCss3,
+};
 
 function Projects() {
   return (
@@ -55,35 +71,48 @@ function Projects() {
             <div className="project__img">
               <img src={project.image} alt={project.title} loading="lazy" />
             </div>
-            <div className="icon stack">
-              {project.techStack.map((tech, techIndex) => (
-                <React.Fragment key={techIndex}>
-                  <i className={`bx bxl-${tech.toLowerCase()} project-icon`} />
-                  <p>{tech}</p>
-                </React.Fragment>
-              ))}
-            </div>
-            <h4 className="project__title">{project.title}</h4>
-            <p className="hide">{project.description}</p>
-            <div className="link-btn">
-              <a
-                className="project-btn"
-                id="netlify-btn"
-                href={project.liveLink}
-                target="_blank"
-                aria-label={`${project.title} Site`}
-              >
-                <i className="bx bx-link-alt bx-icon"></i>
-              </a>
-              <a
-                className="project-btn"
-                id="git-btn"
-                href={project.codeLink}
-                aria-label={`${project.title} Code`}
-                target="_blank"
-              >
-                <i className="bx bx-code bx-icon"></i>
-              </a>
+            <div className="project__text">
+              <div className="icon stack">
+                {project.techStack.map((tech, techIndex) => {
+                  const IconComponent = techIcons[tech];
+                  return (
+                    <React.Fragment key={techIndex}>
+                      {IconComponent && typeof IconComponent === 'function' ? (
+                        <>
+                          <IconComponent
+                            className={`tb-icon-${tech.toLowerCase()} project-icon`}
+                          />
+                          <p>{tech}</p> {/* Display the tech name */}
+                        </>
+                      ) : (
+                        <p>{tech}</p>
+                      )}
+                    </React.Fragment>
+                  );
+                })}
+              </div>
+              <h4 className="project__title">{project.title}</h4>
+              <p className="project__description">{project.description}</p>
+              <div className="link-btn">
+                <a
+                  className="project-btn"
+                  id="netlify-btn"
+                  href={project.liveLink}
+                  target="_blank"
+                  aria-label={`${project.title} Site`}
+                >
+                  <i className="bx bx-link-alt bx-icon"></i>
+                </a>
+                <a
+                  className="project-btn"
+                  id="git-btn"
+                  href={project.codeLink}
+                  aria-label={`${project.title} Code`}
+                  target="_blank"
+                >
+                  <i className="bx bx-code bx-icon"></i>
+                </a>
+              </div>
             </div>
           </div>
         ))}

@@ -3,7 +3,6 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      <hr />
       <div className="footer">
         <h2 className="title-footer">Get In Touch</h2>
         <ul className="social-list footer-social">

@@ -51,7 +51,7 @@ function Client() {
               ))}
             </div>
             <h4 className="project__title">{project.title}</h4>
-            <p className="hide">{project.description}</p>
+            <p className="project__description">{project.description}</p>
             <div className="social-icons">
               <div className="link-btn">
                 <a

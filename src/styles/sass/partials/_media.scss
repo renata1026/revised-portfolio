@@ -178,6 +178,7 @@
 
   .stack {
     align-items: center;
+    justify-content: flex-start;
   }
 
   .stack icon {
@@ -218,8 +219,8 @@
     width: unset;
   }
   .project__img img {
-    max-width: unset;
-    // width: unset;
+    min-height: 300px;
+    min-width: 476px;
   }
   .toolkit-icon {
     text-align: center;
@@ -262,7 +263,9 @@
     font-size: $dt-fs-h4;
     margin-top: 2em;
   }
-
+  .project__description {
+    max-width: 476px;
+  }
   .project__data {
     justify-content: unset;
   }
