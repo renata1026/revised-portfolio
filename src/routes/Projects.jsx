@@ -17,16 +17,25 @@ const projectsData = [
     image: Trip,
     techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQL/NoSQL'],
     description:
-      'A robust travel planner full stack application with React, JWT authentication, Express server, CockroachDB, and RESTful APIs, delivering seamless CRUD functionality.',
+      'In my role as project manager and developer for the Astro Planner Travel App, I led React front-end development, building reusable login and register components with authentication. I also played a crucial role in the back-end, creating endpoints and API documentation, utilizing Prisma ORM for database management on Cockroach DB. My multifaceted contributions included mentoring team members and ensuring on-time milestone delivery.',
     liveLink: 'https://astro-planner.netlify.app/',
     codeLink: 'https://github.com/renata1026/astro-planner-client',
+  },
+  {
+    title: 'Reddit Clone',
+    image: Podcast,
+    techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQL/NoSQL'],
+    description:
+      'Developed a full-stack social media application, akin to Reddit, utilizing React for the front end and Prisma with Express for the backend. Cockroach DB hosted the database, ensuring scalability and data integrity. This project highlights my expertise in web development and my ability to create dynamic, user-friendly applications with essential social features.',
+    liveLink: 'https://podcast-planner-app.netlify.app/',
+    codeLink: 'https://github.com/Podcast-Planner/podcast-planner',
   },
   {
     title: 'Podcast App',
     image: Podcast,
     techStack: ['React', 'SASS', 'Firebase'],
     description:
-      'A fun app where the user selects the length of their podcast and genre of podcast using the listen notes API.',
+      'In the Podcast Planner project, I focused on crafting the user experience and designing selection forms to create a seamless process for users to input walk duration, choose podcast genres, and generate personalized playlists. Using React, Sweet Alerts 2, Axios, and Framer Motion, I contributed to a mobile-fi rst design, ensuring an enjoyable podcast planning experience. Firebase stores playlists, and Listen Notes API generates content.',
     liveLink: 'https://podcast-planner-app.netlify.app/',
     codeLink: 'https://github.com/Podcast-Planner/podcast-planner',
   },
@@ -35,7 +44,7 @@ const projectsData = [
     image: Makeup,
     techStack: ['CSS3', 'React'],
     description:
-      'An elegantly designed e-commerce website using React and the makeup API. Includes a scroll to top feature and a functional shopping cart.',
+      'Crafted a user-centric makeup eCommerce platform featuring customizable products through integration with the Makeup API. Leveraging React, local storage, and SASS, I meticulously designed components, established seamless routing, and implemented a robust cart functionality for an enriched shopping experience.',
     liveLink: 'https://makeup4life.netlify.app/',
     codeLink: 'https://github.com/renata1026/makeup-ecommerce-store',
   },

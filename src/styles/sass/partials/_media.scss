@@ -308,6 +308,9 @@
   .flex-col {
     flex-direction: row;
   }
+  .link-btn {
+    justify-content: flex-start;
+  }
 }
 
 /* Mobile Only Styles */
