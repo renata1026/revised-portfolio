@@ -5,7 +5,11 @@ import {
   TbBrandSass,
   TbBrandPrisma,
   TbBrandFirebase,
+  TbServer,
+  TbSql,
 } from 'react-icons/tb';
+
+import Reddit from '../assets/reddit-clone.png';
 import Trip from '../assets/trip-planner.png';
 import Podcast from '../assets/find-your-podcast.png';
 import Makeup from '../assets/makeup-store.png';
@@ -15,7 +19,7 @@ const projectsData = [
   {
     title: 'Astro Planner App',
     image: Trip,
-    techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQL/NoSQL'],
+    techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQLNoSQL'],
     description:
       'In my role as project manager and developer for the Astro Planner Travel App, I led React front-end development, building reusable login and register components with authentication. I also played a crucial role in the back-end, creating endpoints and API documentation, utilizing Prisma ORM for database management on Cockroach DB. My multifaceted contributions included mentoring team members and ensuring on-time milestone delivery.',
     liveLink: 'https://astro-planner.netlify.app/',
@@ -23,12 +27,12 @@ const projectsData = [
   },
   {
     title: 'Reddit Clone',
-    image: Podcast,
-    techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQL/NoSQL'],
+    image: Reddit,
+    techStack: ['React', 'SASS', 'Prisma', 'Express', 'SQLNoSQL'],
     description:
       'Developed a full-stack social media application, akin to Reddit, utilizing React for the front end and Prisma with Express for the backend. Cockroach DB hosted the database, ensuring scalability and data integrity. This project highlights my expertise in web development and my ability to create dynamic, user-friendly applications with essential social features.',
-    liveLink: 'https://podcast-planner-app.netlify.app/',
-    codeLink: 'https://github.com/Podcast-Planner/podcast-planner',
+    liveLink: 'https://reddit-clone-site.netlify.app/',
+    codeLink: 'https://github.com/renata1026/reddit-client',
   },
   {
     title: 'Podcast App',
@@ -64,8 +68,8 @@ const techIcons = {
   React: TbBrandReact,
   SASS: TbBrandSass,
   Prisma: TbBrandPrisma,
-  Express: 'Express', // String for tech without a corresponding icon
-  SQLNoSQL: 'SQL/NoSQL', // String for tech without a corresponding icon
+  Express: TbServer,
+  SQLNoSQL: TbSql,
   Firebase: TbBrandFirebase,
   CSS3: TbBrandCss3,
 };
@@ -87,12 +91,12 @@ function Projects() {
                   return (
                     <React.Fragment key={techIndex}>
                       {IconComponent && typeof IconComponent === 'function' ? (
-                        <>
+                        <div className="icon-container">
                           <IconComponent
-                            className={`tb-icon-${tech.toLowerCase()} project-icon`}
+                            className={`tb-icon-${tech.toLowerCase()} project-icon `}
                           />
-                          <p>{tech}</p> {/* Display the tech name */}
-                        </>
+                          <p className="tech-name">{tech}</p>{' '}
+                        </div>
                       ) : (
                         <p>{tech}</p>
                       )}

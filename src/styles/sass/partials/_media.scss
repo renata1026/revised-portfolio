@@ -119,9 +119,8 @@
     text-align: left;
   }
 
-  .icon.stack p {
-    margin-right: 1.25em;
-    margin: 2em 0em;
+  .tech-name {
+    margin-top: 10px;
   }
   .right-col {
     padding-left: 2em;
@@ -179,6 +178,8 @@
   .stack {
     align-items: center;
     justify-content: flex-start;
+    margin-top: 20px;
+    gap: 20px;
   }
 
   .stack icon {
